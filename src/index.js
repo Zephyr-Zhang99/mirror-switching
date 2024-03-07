@@ -92,10 +92,9 @@ function testRegistrySpeed(url) {
     });
 }
 
-// 解析命令行参数
+
 const args = process.argv.slice(2);
 const command = args[0] || '';
-// 执行相应的命令
 if (commands[command]) {
     commands[command]();
 } else {
