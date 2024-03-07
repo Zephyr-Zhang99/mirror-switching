@@ -1,0 +1,22 @@
+{
+  "name": "mirror-switching",
+  "version": "1.0.0",
+  "description": "mirror-switching",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [
+    "nrm",
+    "npm",
+    "pnpm",
+    "cnpm",
+    "yarn"
+  ],
+  "bin": {
+    "zmp": "./src/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
