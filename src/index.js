@@ -69,7 +69,7 @@ const commands = {
             if (index >= 0 && index < Keys.length) {
                 const selectedRegistry = Keys[index];
                 console.log(selectedRegistry);
-                testRegistrySpeed(mirrors[selectedRegistry].registry)
+                pingMirrorsSpeed(mirrors[selectedRegistry].registry)
             } else {
                 console.log(`请选择1~${Keys.length}`);
                 rl.close();
@@ -78,7 +78,7 @@ const commands = {
     },
 };
 
-function testRegistrySpeed(url) {
+function pingMirrorsSpeed(url) {
     const start = process.hrtime();
     const request = https.get(url, (response) => {
         const end = process.hrtime(start);
